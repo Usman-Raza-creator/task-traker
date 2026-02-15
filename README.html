@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List App | Productivity Made Simple</title>
+
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-list-check"></i> TaskFlow</h1>
+            <p>Focus on what matters most.</p>
+        </header>
+
+        <div class="input-section">
+            <div class="input-wrapper">
+                <i class="fa-solid fa-pen-to-square input-icon"></i>
+                <input type="text" id="taskInput" placeholder="What's your next goal?" autocomplete="off">
+            </div>
+            <button id="addTaskBtn"><i class="fa-solid fa-plus"></i> Add</button>
+        </div>
+
+        <div class="task-list-container">
+            <div class="list-header">
+                <h2>Your Tasks</h2>
+                <span class="task-count" id="taskCount">0 tasks</span>
+            </div>
+            <ul id="taskList">
+                <!-- Tasks will be added here dynamically -->
+            </ul>
+
+            <div id="emptyState" class="empty-state" style="display: none;">
+                <i class="fa-light fa-clipboard-check"></i>
+                <p>All caught up! Time to relax or set new goals.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
